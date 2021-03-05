@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="TechHomework4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-dark bg-primary">
+                <h1 class="text-white">Pet Care Philadelphia</h1>
+                <div style="display: flex; flex-direction: row; justify-content: space-around; width: 25%">
+                    <a class="nav-link text-white" href="Default.aspx">Home</a>
+                    <a class="nav-link text-white" href="PageTwo.aspx">Place Order Ticket</a>
+                    <a class="nav-link text-white" href="PageThree.aspx">Happy Customers </a>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <h1>Main Page</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
